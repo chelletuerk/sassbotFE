@@ -1,5 +1,6 @@
 html {
-  background-color: #696969;
+  background: linear-gradient(to top left, #006666, lightgray);
+  height: 100%;
 }
 
 h1 {
