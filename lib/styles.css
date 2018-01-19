@@ -85,10 +85,16 @@ input {
   background-color: #FEFBF7;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
   transition: all 0.7s ease;
+  position: relative;
 }
 
 .user-button:hover {
   transform:scale(1.1);
+}
+
+.delete-user-button {
+  position: absolute;
+  z-index: 999;
 }
 
 .sassie {
