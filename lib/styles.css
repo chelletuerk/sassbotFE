@@ -92,9 +92,16 @@ input {
   transform:scale(1.1);
 }
 
-.delete-user-button {
+.delete-user {
   position: absolute;
   z-index: 999;
+  right: 3px;
+  bottom: 15px;
+  font-size: 15px;
+}
+
+.delete-user:hover {
+  color: red;
 }
 
 .sassie {
