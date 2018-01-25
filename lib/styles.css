@@ -32,6 +32,10 @@ input {
   border-color: #b2dfdb;
 }
 
+p {
+  cursor: pointer;
+}
+
 .user-container {
   text-align: center;
 }
@@ -110,6 +114,6 @@ input {
   color: #b2dfdb;
 }
 
-p {
-  cursor: pointer;
+.giphy {
+  border-radius: 5px;
 }
