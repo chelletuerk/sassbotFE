@@ -10,6 +10,7 @@ h1 {
   text-align: center;
   font-family: 'Megrim', cursive;
   font-size: 100px;
+  margin-top: 0;
   margin-bottom: 4px;
   margin-right: 40px;
   margin-left: 40px;
@@ -119,4 +120,6 @@ p {
 
 .giphy {
   border-radius: 10px;
+  height: 300px;
+  width: 400px;
 }
