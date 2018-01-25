@@ -1,6 +1,9 @@
 html {
-  background: linear-gradient(to top left, #006666, lightgray);
   height: 100%;
+}
+
+body {
+  background: linear-gradient(to top left, #006666, lightgray);
 }
 
 h1 {
@@ -115,5 +118,5 @@ p {
 }
 
 .giphy {
-  border-radius: 5px;
+  border-radius: 10px;
 }
