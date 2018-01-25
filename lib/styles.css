@@ -1,6 +1,9 @@
 html {
-  background: linear-gradient(to top left, #006666, lightgray);
   height: 100%;
+}
+
+body {
+  background: linear-gradient(to top left, #006666, lightgray);
 }
 
 h1 {
@@ -30,6 +33,10 @@ input {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   border-color: #b2dfdb;
+}
+
+p {
+  cursor: pointer;
 }
 
 .user-container {
@@ -108,4 +115,8 @@ input {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
   color: #b2dfdb;
+}
+
+.giphy {
+  border-radius: 10px;
 }
