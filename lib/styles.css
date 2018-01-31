@@ -53,23 +53,13 @@ p {
   text-align: center;
 }
 
-.user-name {
+input {
   width: 200px;
   height: 25px;
   border-radius: 5px;
   background-color: #FEFBF7;
   border: solid #b2dfdb 3px;
   margin-right: 5px;
-  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.50);
-}
-
-.user-email {
-  width: 200px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: #FEFBF7;
-  border: solid #b2dfdb 3px;
-  margin: 0 5px 10px 0;
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.50);
 }
 
