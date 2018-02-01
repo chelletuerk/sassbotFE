@@ -43,9 +43,14 @@ p {
   cursor: pointer;
 }
 
+.user-button {
+  width: 300px;
+}
+
 .user-container {
-  width: 550px;
+  width: 700px;
   margin: auto;
+  columns: 2;
 }
 
 .user-section {
@@ -91,6 +96,21 @@ input {
   position: relative;
 }
 
+.back-to-users {
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  border: solid #b2dfdb 3px;
+  background-color: #FEFBF7;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  transition: all 0.7s ease;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 .user-button:hover {
   transform:scale(1.1);
 }
@@ -115,8 +135,8 @@ input {
 
 .giphy {
   border-radius: 10px;
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 500px;
 }
 
 .drawer-nav {
