@@ -34,6 +34,7 @@ input {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   border-color: #b2dfdb;
+  margin: 20px 0;
 }
 
 p {
@@ -41,7 +42,8 @@ p {
 }
 
 .user-container {
-  text-align: center;
+  width: 550px;
+  margin: auto;
 }
 
 .user-section {
@@ -71,6 +73,7 @@ input {
   border: solid #b2dfdb 3px;
   background-color: #FEFBF7;
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.50);
+  margin-top: 10px;
 }
 
 .user-button {
@@ -92,7 +95,7 @@ input {
 
 .delete-user {
   position: absolute;
-  z-index: 999;
+  z-index: 2;
   right: 3px;
   bottom: 15px;
   font-size: 15px;
@@ -112,4 +115,12 @@ input {
   border-radius: 10px;
   height: 300px;
   width: 400px;
+}
+
+.drawer-nav {
+  background-color: rgba(0,0,0,.75) !important;
+}
+
+.drawer-hamburger {
+  color: #FEFBF7 !important;
 }
