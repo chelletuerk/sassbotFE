@@ -11,7 +11,7 @@ h1 {
   font-family: 'Megrim', cursive;
   font-size: 100px;
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   margin-right: 40px;
   margin-left: 40px;
   color: #b2dfdb;
@@ -19,6 +19,8 @@ h1 {
   border: solid #b2dfdb 3px;
   border-radius: 5px;
   height: 100px;
+  width: 500px;
+  margin: auto;
   padding: 40px;
 }
 
@@ -123,4 +125,16 @@ input {
 
 .drawer-hamburger {
   color: #FEFBF7 !important;
+}
+
+.drawer-hamburger-icon {
+  background-color: #FEFBF7;
+}
+
+.drawer-hamburger-icon:before {
+  background-color: #FEFBF7;
+}
+
+.drawer-hamburger-icon:after {
+  background-color: #FEFBF7;
 }
