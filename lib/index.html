@@ -28,10 +28,16 @@
     <main role="main">
       <h1>SassBot</h1>
       <h2>Putting terrible images with your terrible words</h2>
-        <div class="user-container"></div>
+        <input type="text" class="search-input" name="search" placeholder="Search some sass"></input>
+        <div class="expanding-block">
+          <input type="checkbox" name="expander" id="expander">
+          <label class="user-button-wrap__toggle" for="expander">Show Me Some Sass!</label>
+          <div class="user-container"></div>
+          <div class="sass-container"></div>
+        </div>
       <section class="sass-section">
         <button type="button" class="back-to-users">Gimme more Sass!</button>
-        <div class="sass-container"></div>
+        <!-- <div class="sass-container"></div> -->
       </section>
       <div class="application" />
       <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>

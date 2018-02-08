@@ -39,12 +39,15 @@ input {
   margin: 20px 0;
 }
 
-p {
+.sassie {
   cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #b2dfdb;
 }
 
-.user-button {
-  width: 300px;
+.sassie:hover {
+  color: #ffb26d;
 }
 
 .user-container {
@@ -84,6 +87,7 @@ input {
 }
 
 .user-button {
+  width: 300px;
   height: 50px;
   margin: 10px;
   border-radius: 5px;
@@ -92,8 +96,23 @@ input {
   border: solid #b2dfdb 3px;
   background-color: #FEFBF7;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
-  transition: all 0.7s ease;
+  transition: background 0.5s ease-in-out;
+  /* transition: all 0.7s ease; */
   position: relative;
+}
+
+.user-button:hover {
+  cursor: pointer;
+  background: #ffb26d;
+  /* transform:scale(1.1); */
+}
+
+.search-input {
+  width: 500px;
+  height: 40px;
+  margin: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .back-to-users {
@@ -111,10 +130,6 @@ input {
   right: 10px;
 }
 
-.user-button:hover {
-  transform:scale(1.1);
-}
-
 .delete-user {
   position: absolute;
   z-index: 2;
@@ -125,12 +140,6 @@ input {
 
 .delete-user:hover {
   color: red;
-}
-
-.sassie {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
-  color: #b2dfdb;
 }
 
 .giphy {
@@ -147,6 +156,10 @@ input {
   color: #FEFBF7 !important;
 }
 
+.drawer-hamburger:hover {
+  color: #ffb26d;
+}
+
 .drawer-hamburger-icon {
   background-color: #FEFBF7;
 }
@@ -157,4 +170,59 @@ input {
 
 .drawer-hamburger-icon:after {
   background-color: #FEFBF7;
+}
+
+.expanding-block {
+  position: relative;
+}
+
+.user-button-wrap__toggle {
+  position: absolute;
+  bottom: -55px;
+  z-index:100;
+  border-radius: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  border: solid #b2dfdb 3px;
+  background-color: #FEFBF7;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  width: 200px;
+  height: 40px;
+  left: calc(50% - 100px);
+  padding: 6px;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0,0.2) 0px 8px 4px -6px;
+
+  &:before {
+    content: 'Show More';
+  }
+}
+
+.user-container {
+  height: auto;
+  max-height: 0;
+  transition-duration: 0.5s;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  /* width: 100%; */
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .user-container__toggle {
+  box-shadow: rgba(0,0,0,0.2) 0px -8px 4px -6px;
+
+  &:before {
+    content: 'Show Less';
+  }
+}
+
+input[type="checkbox"]:checked ~ .user-container {
+  max-height: 800px;
 }
