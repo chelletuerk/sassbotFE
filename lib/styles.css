@@ -128,6 +128,10 @@ input {
   right: 10px;
 }
 
+.search-container {
+  text-align: center;
+}
+
 .delete-user {
   position: absolute;
   z-index: 2;
