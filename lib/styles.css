@@ -11,7 +11,7 @@ h1 {
   font-family: 'Megrim', cursive;
   font-size: 100px;
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   margin-right: 40px;
   margin-left: 40px;
   color: #b2dfdb;
@@ -19,6 +19,8 @@ h1 {
   border: solid #b2dfdb 3px;
   border-radius: 5px;
   height: 100px;
+  width: 500px;
+  margin: auto;
   padding: 40px;
 }
 
@@ -37,13 +39,21 @@ input {
   margin: 20px 0;
 }
 
-p {
+.sassie {
   cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #b2dfdb;
+}
+
+.sassie:hover {
+  color: #ffb26d;
 }
 
 .user-container {
-  width: 550px;
+  width: 700px;
   margin: auto;
+  columns: 2;
 }
 
 .user-section {
@@ -77,6 +87,35 @@ input {
 }
 
 .user-button {
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  border: solid #b2dfdb 3px;
+  background-color: #FEFBF7;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  transition: background 0.5s ease-in-out;
+  /* transition: all 0.7s ease; */
+  position: relative;
+}
+
+.user-button:hover {
+  cursor: pointer;
+  background: #ffb26d;
+  /* transform:scale(1.1); */
+}
+
+.search-input {
+  width: 500px;
+  height: 40px;
+  margin: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.back-to-users {
   height: 50px;
   margin: 10px;
   border-radius: 5px;
@@ -86,11 +125,9 @@ input {
   background-color: #FEFBF7;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
   transition: all 0.7s ease;
-  position: relative;
-}
-
-.user-button:hover {
-  transform:scale(1.1);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .delete-user {
@@ -105,16 +142,10 @@ input {
   color: red;
 }
 
-.sassie {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
-  color: #b2dfdb;
-}
-
 .giphy {
   border-radius: 10px;
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 500px;
 }
 
 .drawer-nav {
@@ -123,4 +154,75 @@ input {
 
 .drawer-hamburger {
   color: #FEFBF7 !important;
+}
+
+.drawer-hamburger:hover {
+  color: #ffb26d;
+}
+
+.drawer-hamburger-icon {
+  background-color: #FEFBF7;
+}
+
+.drawer-hamburger-icon:before {
+  background-color: #FEFBF7;
+}
+
+.drawer-hamburger-icon:after {
+  background-color: #FEFBF7;
+}
+
+.expanding-block {
+  position: relative;
+}
+
+.user-button-wrap__toggle {
+  position: absolute;
+  bottom: -55px;
+  z-index:100;
+  border-radius: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  border: solid #b2dfdb 3px;
+  background-color: #FEFBF7;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  width: 200px;
+  height: 40px;
+  left: calc(50% - 100px);
+  padding: 6px;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0,0.2) 0px 8px 4px -6px;
+
+  &:before {
+    content: 'Show More';
+  }
+}
+
+.user-container {
+  height: auto;
+  max-height: 0;
+  transition-duration: 0.5s;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  /* width: 100%; */
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .user-container__toggle {
+  box-shadow: rgba(0,0,0,0.2) 0px -8px 4px -6px;
+
+  &:before {
+    content: 'Show Less';
+  }
+}
+
+input[type="checkbox"]:checked ~ .user-container {
+  max-height: 800px;
 }

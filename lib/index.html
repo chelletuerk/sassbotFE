@@ -16,7 +16,7 @@
       <nav class="drawer-nav" role="navigation">
         <ul class="drawer-menu">
           <section class="user-section">
-            <h2>Wanna submit some sass?    We'll, okay then!    Sheesh...</h2>
+            <h2>Wanna submit some sass?    Well, okay then!    Sheesh...</h2>
             <input type="text" class="user-name" name="name" placeholder="Name"></input>
             <input type="text" class="user-email" placeholder="Email"></input>
             <input type="text" class="sass-comment" placeholder="Putcha sass here!"></input>
@@ -28,9 +28,16 @@
     <main role="main">
       <h1>SassBot</h1>
       <h2>Putting terrible images with your terrible words</h2>
-        <div class="user-container"></div>
+        <input type="text" class="search-input" name="search" placeholder="Search some sass"></input>
+        <div class="expanding-block">
+          <input type="checkbox" name="expander" id="expander">
+          <label class="user-button-wrap__toggle" for="expander">Show Me Some Sass!</label>
+          <div class="user-container"></div>
+          <div class="sass-container"></div>
+        </div>
       <section class="sass-section">
-        <div class="sass-container"></div>
+        <button type="button" class="back-to-users">Gimme more Sass!</button>
+        <!-- <div class="sass-container"></div> -->
       </section>
       <div class="application" />
       <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
