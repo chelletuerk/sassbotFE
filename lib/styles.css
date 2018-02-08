@@ -37,6 +37,13 @@ input {
   font-size: 20px;
   border-color: #b2dfdb;
   margin: 20px 0;
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #FEFBF7;
+  border: solid #b2dfdb 3px;
+  margin-right: 5px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.50);
 }
 
 .sassie {
@@ -44,6 +51,7 @@ input {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
   color: #b2dfdb;
+  margin-top: 20px;
 }
 
 .sassie:hover {
@@ -63,16 +71,6 @@ input {
 
 .sass-container {
   text-align: center;
-}
-
-input {
-  width: 200px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: #FEFBF7;
-  border: solid #b2dfdb 3px;
-  margin-right: 5px;
-  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.50);
 }
 
 .submit-button {
@@ -134,8 +132,8 @@ input {
   position: absolute;
   z-index: 2;
   right: 3px;
-  bottom: 15px;
-  font-size: 15px;
+  bottom: 4px;
+  font-size: 20px;
 }
 
 .delete-user:hover {
@@ -195,20 +193,15 @@ input {
   border-radius: 3px;
   box-sizing: border-box;
   box-shadow: rgba(0,0,0,0.2) 0px 8px 4px -6px;
-
-  &:before {
-    content: 'Show More';
-  }
+  background-color: lightgray;
 }
 
 .user-container {
   height: auto;
   max-height: 0;
-  transition-duration: 0.5s;
   overflow: auto;
   position: relative;
   margin: 0 auto;
-  /* width: 100%; */
 }
 
 input[type="checkbox"] {
@@ -217,10 +210,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked ~ .user-container__toggle {
   box-shadow: rgba(0,0,0,0.2) 0px -8px 4px -6px;
-
-  &:before {
-    content: 'Show Less';
-  }
 }
 
 input[type="checkbox"]:checked ~ .user-container {
